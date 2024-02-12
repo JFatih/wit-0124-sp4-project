@@ -22,9 +22,10 @@ h1 {
     justify-content: center;
 }
 
-.access-menu img {
+.user-avatar {
     border-radius: 100%;
     width: 2.3rem;
+    margin: 3px 3px;
 }
 
 .notification-icon {
@@ -48,6 +49,58 @@ header nav a{
     margin: 0 0.5rem;
     color: rgb(59, 59, 59);
 }
-header nav a:hover{
+
+header nav a:hover, .search-icon:hover, .notification-icon:hover{
     color:red;
+}
+.access-menu img:hover {
+    border: 3px solid black;
+}
+main {
+    margin: 1rem;
+    padding: 2rem;
+    border: 1px solid black;
+    height: 70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+.info-section {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 0.8rem;
+    align-items: center;
+}
+.info-section i {
+    color:red;
+
+}
+.age-counter {
+    border: 2px solid black;
+    border-radius: 20%;
+    padding: 0.1rem 0.2rem;
+}
+.bold-section {
+    font-weight: bold;
+}
+.description {
+    width: 50%;
+}
+.text-red {
+    color:red;
+    font-weight: bold;
+}
+main p {
+    margin: 0.5rem 0.5rem;
+}
+.btn {
+    border: 3px solid black;
+    background-color: red;
+    padding: 0.5rem 0.5rem;
+    font-weight: bold;
+    color: white;
+    width: 10%;
+    border-radius: 1rem;
+    display: flex;
+    
 }
