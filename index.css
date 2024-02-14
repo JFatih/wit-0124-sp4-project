@@ -1,3 +1,6 @@
+/* * {
+    border: 2px solid red;
+} */
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -42,12 +45,11 @@ body {
 }
     /* header section  */
 header {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-}
-
+    }
 h1 {
     color:red;
 }
@@ -74,12 +76,12 @@ h1 {
     font-size:1rem;
 }
 
-header h1, header div {
-    width: 30%;
+header h1, header div,header nav {
+    display:block
 }
 input {
-    padding: 0.3rem;
-    padding-right: 1rem;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
 }
 nav a{
     text-decoration: none;
@@ -99,7 +101,7 @@ main {
     margin: 1rem;
     padding: 2rem;
     border: 1px solid black;
-    height: 70vh;
+    height: 60vh;
     display:flex;
     flex-direction: column; 
     justify-content: center;  
@@ -185,6 +187,9 @@ footer nav a:first-child {
 
 /* for mobile max width 900px */
 @media (max-width: 900px) {
+    body {
+        min-width: 468px;
+    }
     .description {
         width: inherit;
     }
@@ -199,5 +204,36 @@ footer nav a:first-child {
     .section-content {
         overflow: auto;
     }
-
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        flex-wrap: wrap;
+    }
+    .btn-l {
+        font-size: 0.7rem;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        margin: 0.5rem 0;
+        margin-bottom: -0.5rem;
+    }
+    .btn-l i {
+        margin-right: 0.3rem;
+    }
+    main h2 {
+        font-size: 2rem;
+    }
+    .card {
+        padding: 1rem;
+    }
+    .card h4 {
+        font-size: 1.2rem;
+        margin: 0.4rem 0;
+    }
+    section .age-counter, section .text-bold {
+        font-size: 0.7rem;
+    }
+    div .section-content {
+        overflow:auto;
+    }
 }
