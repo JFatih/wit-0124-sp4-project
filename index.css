@@ -182,3 +182,22 @@ footer div:last-child {
 footer nav a:first-child {
     margin-left: 0;
 }
+
+/* for mobile max width 900px */
+@media (max-width: 900px) {
+    .description {
+        width: inherit;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    header nav {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+    .section-content {
+        overflow: auto;
+    }
+
+}
